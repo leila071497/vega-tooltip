@@ -17,7 +17,7 @@ export function formatValue(value: any, valueToHtml: (value: any) => string, max
     const {title, image, ...rest} = value as any;
 
     if (title) {
-      content += `<h2>${valueToHtml(title)}</h2>`;
+      content += `<h1>${valueToHtml(title)}</h1>`;
     }
 
     if (image) {
